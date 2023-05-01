@@ -1,9 +1,12 @@
+import { SectStatish2 } from "../Stats/stats.styled";
+import { StatisticsSection } from "../Stats/stats.styled";
+
 const SectStatis = ({ title, children }) => {
     return (
-      <section>
-        {title && <h2>{title}</h2>}
+      <StatisticsSection>
+        {title && <SectStatish2>{title}</SectStatish2>}
         {children}
-      </section>
+      </StatisticsSection>
     );
   };
 

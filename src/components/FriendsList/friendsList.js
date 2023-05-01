@@ -1,16 +1,21 @@
+import { Friendlist } from "../FriendsList/FriendList.styled";
+import { Friendlistli } from "../FriendsList/FriendList.styled";
+import { Friendlistnamespan } from "../FriendsList/FriendList.styled";
+import { Friendlistisonlinespan } from "../FriendsList/FriendList.styled";
+
 import PropTypes from 'prop-types';
 
 const Friends = ({ descr }) => {
     return (
-        <ul className="friend-list">
+        <Friendlist>
           {descr.map(({ id, name, isOnline, avatar }) => (
-        <li key={id}>
-        <span className={isOnline ? 'statusonline' : 'statusoffline'}></span>
+        <Friendlistli key={id}>
+        <Friendlistisonlinespan isonlinenow={isOnline}></Friendlistisonlinespan>
         <img className="avatar" src={avatar} alt="User avatar" width="48" />
-        <p className="name">{name}</p>
-      </li> 
+        <Friendlistnamespan>{name}</Friendlistnamespan>
+      </Friendlistli> 
           ))}
-        </ul>
+        </Friendlist>
     );
   };
 

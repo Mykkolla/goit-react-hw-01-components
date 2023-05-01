@@ -4,18 +4,9 @@ import user from "../../user.json";
 // const user = require('../user.json');
 
 
-export const App = () => {
+export const ProfileCard = () => {
   return (
-    <div
-      // style={{
-      //   height: '100vh',
-      //   display: 'flex',
-      //   justifyContent: 'center',
-      //   alignItems: 'center',
-      //   fontSize: 40,
-      //   color: '#010101'
-      // }}
-    >
+    <div>
 <Profile
   username={user.username}
   tag={user.tag}

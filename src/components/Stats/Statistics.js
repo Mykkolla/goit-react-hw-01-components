@@ -1,15 +1,17 @@
 import PropTypes from 'prop-types';
+import { Statisticsul } from "../Stats/stats.styled";
+import { Statisticsli } from "../Stats/stats.styled";
 
 const Statistics = ({ stats }) => {
     return (
-        <ul>
+        <Statisticsul>
           {stats.map(({ id, label, percentage }) => (
-            <li key={id}>
+            <Statisticsli key={id}>
               <span>{label}</span>
               <span>{percentage}%</span>
-            </li>
+            </Statisticsli>
           ))}
-        </ul>
+        </Statisticsul>
     );
   };
 

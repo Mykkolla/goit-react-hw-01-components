@@ -1,5 +1,10 @@
 import PropTypes from 'prop-types';
 import defaultimg from '../default.jpg'
+import { Description } from "../Profill/profill.styled";
+import { DescriptionIMG } from "../Profill/profill.styled";
+import { ProfileMain } from "../Profill/profill.styled";
+import { DescriptionUL } from "../Profill/profill.styled";
+import { Descriptionli } from "../Profill/profill.styled";
 
 const Profile = ({ 
     username, 
@@ -13,29 +18,29 @@ const Profile = ({
         likes } = stats;
   
     return (
-      <div className="profile">
-        <div className="description">
-          <img src={avatar} alt="User avatar" className="avatar" />
+      <ProfileMain>
+        <Description>
+          <DescriptionIMG src={avatar} alt="User avatar" className="avatar" />
           <p className="name">{username}</p>
           <p className="tag">@{tag}</p>
           <p className="location">{location}</p>
-        </div>
+        </Description>
   
-        <ul className="stats">
-          <li>
+        <DescriptionUL>
+          <Descriptionli>
             <span className="label">Followers</span>
             <span className="quantity">{followers}</span>
-          </li>
-          <li>
+          </Descriptionli>
+          <Descriptionli>
             <span className="label">Views</span>
             <span className="quantity">{views}</span>
-          </li>
-          <li>
+          </Descriptionli>
+          <Descriptionli>
             <span className="label">Likes</span>
             <span className="quantity">{likes}</span>
-          </li>
-        </ul>
-      </div>
+          </Descriptionli>
+        </DescriptionUL>
+      </ProfileMain>
     );
   };
 
