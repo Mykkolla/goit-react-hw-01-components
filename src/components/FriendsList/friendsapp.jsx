@@ -1,5 +1,5 @@
 import Friends from './friendsList'
-import datafriends from "../friends.json";
+import datafriends from "../../friends.json";
 
 
 

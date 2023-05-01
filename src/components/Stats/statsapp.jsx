@@ -1,6 +1,6 @@
 
 import Statistics from './Statistics'
-import dataststs from "../data.json";
+import dataststs from "../../data.json";
 import SectStatis from "./sectionStats";
 
 

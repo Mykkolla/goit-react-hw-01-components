@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import defaultimg from './default.jpg'
+import defaultimg from '../default.jpg'
 
 const Profile = ({ 
     username, 

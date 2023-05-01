@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { App } from 'components/ProfilApp.jsx';
-import { Stat } from './components/statsapp.jsx';
-import { FriendsList } from './components/friendsapp.jsx';
-import { Transaction } from './components/transactApps.jsx';
+import { App } from 'components/Profill/ProfilApp.jsx';
+import { Stat } from './components/Stats/statsapp.jsx';
+import { FriendsList } from './components/FriendsList/friendsapp.jsx';
+import { Transaction } from './components/Transactions/transactApps.jsx';
 import './index.css';
 
 

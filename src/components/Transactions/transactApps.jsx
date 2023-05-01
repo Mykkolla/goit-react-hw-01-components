@@ -1,5 +1,5 @@
 import TransactionHistory from './Transaction'
-import transactionhis from "../transactions.json";
+import transactionhis from "../../transactions.json";
 
 
 

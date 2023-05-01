@@ -1,6 +1,6 @@
 
 import Profile from './profil'
-import user from "../user.json";
+import user from "../../user.json";
 // const user = require('../user.json');
 
 
