@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
-import { Transactiontable } from "../Transactions/Transaction.styled";
-import { Transactionth } from "../Transactions/Transaction.styled";
-import { Transactiontd } from "../Transactions/Transaction.styled";
-import { Transactiontr } from "../Transactions/Transaction.styled";
+import { Transactiontable } from '../Transactions/Transaction.styled';
+import { Transactionth } from '../Transactions/Transaction.styled';
+import { Transactiontd } from '../Transactions/Transaction.styled';
+import { Transactiontr } from '../Transactions/Transaction.styled';
+
 const TransactionHistory = ({ items }) => {
-    return (
-        <Transactiontable>
+  return (
+    <Transactiontable>
       <thead>
         <tr>
           <Transactionth>Type</Transactionth>
@@ -24,20 +25,18 @@ const TransactionHistory = ({ items }) => {
         ))}
       </tbody>
     </Transactiontable>
-    );
-  };
+  );
+};
 
-  export default TransactionHistory;
+export default TransactionHistory;
 
-
-
-  TransactionHistory.propTypes = {
-    items: PropTypes.arrayOf(
-        PropTypes.shape({
-            id: PropTypes.string.isRequired,
-            type: PropTypes.string.isRequired,
-            amount: PropTypes.string.isRequired,
-            currency: PropTypes.string.isRequired,
-        })
-    ).isRequired,
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };

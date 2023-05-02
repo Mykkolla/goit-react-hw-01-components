@@ -1,5 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
-import 'modern-normalize';
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 body {
@@ -21,4 +20,4 @@ code {
     margin: 0; 
     padding: 0; 
   }
-`
+`;

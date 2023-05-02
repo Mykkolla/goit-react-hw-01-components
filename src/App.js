@@ -1,23 +1,31 @@
 import React from 'react';
 // import ReactDOM from 'react-dom/client';
-import { ProfileCard } from 'components/Profill/ProfilApp.jsx';
-import { Stat } from './components/Stats/statsapp.jsx';
-import { FriendsList } from './components/FriendsList/friendsapp.jsx';
-import { Transaction } from './components/Transactions/transactApps.jsx';
-import { GlobalStyle } from "./components/Globalstyl/Globalstyle.js";
-import { MainSection } from "./components/Style/Loyaut.js";
+import Profile from './components/Profile/profile';
+import Statistics from './components/Stats/Statistics';
+import Friends from './components/FriendsList/friendsList';
+import TransactionHistory from './components/Transactions/Transaction';
+import { MainSection } from './components/Style/Loyaut.js';
 
+import user from './data/user.json';
+import dataststs from './data/data.json';
+import datafriends from './data/friends.json';
+import transactionhis from './data/transactions.json';
 
 export const App = () => {
-    return (
-<div>
-    <MainSection>
-    <GlobalStyle />
-    <ProfileCard />
-    <Stat />
-    <FriendsList />
-    <Transaction />
-    </MainSection>
-</div>
-    );
-  };
+  return (
+    <div>
+      <MainSection>
+        <Profile
+          username={user.username}
+          tag={user.tag}
+          location={user.location}
+          avatar={user.avatar}
+          stats={user.stats}
+        />
+        <Statistics title="Upload stats" stats={dataststs} />
+        <Friends descr={datafriends} />
+        <TransactionHistory items={transactionhis} />
+      </MainSection>
+    </div>
+  );
+};
