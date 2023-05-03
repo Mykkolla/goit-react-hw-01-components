@@ -5,9 +5,9 @@ import { FriendlistItem } from './FriendList.styled';
 import { FriendName } from './FriendList.styled';
 import { Friendliststatus } from './FriendList.styled';
 
-const FriendListItem = ({ id, name, isOnline, avatar }) => {
+const FriendListItem = ({ name, isOnline, avatar }) => {
   return (
-    <FriendlistItem key={id}>
+    <FriendlistItem>
       <Friendliststatus isonlinenow={isOnline}></Friendliststatus>
       <img className="avatar" src={avatar} alt="User avatar" width="48" />
       <FriendName>{name}</FriendName>
